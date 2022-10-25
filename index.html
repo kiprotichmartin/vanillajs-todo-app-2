@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fetching and posting to rest apis</title>
+  </head>
+  <body>
+    <div class="main--container">
+      <div class="card">
+        <h2>Todo list</h2>
+        <div class="card-body">
+          <form id="form" action="script.js">
+            <div class="input-group">
+              <div class="input-div">
+                <input
+                  type="text"
+                  class="input-control"
+                  id="todo"
+                  placeholder="Add todo"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <button id="btn-submit" type="submit">Submit</button>
+            </div>
+          </form>
+
+          <div class="todo-stats">
+            <button class="tab-btn" onclick="displayTotal()">
+              Total:
+              <span id="span3"></span>
+            </button>
+            <button class="tab-btn" onclick="displayCompleted()">
+              Completed:
+              <span id="span1"></span>
+            </button>
+            <button class="tab-btn" onclick="displayRemaining()">
+              Remaining:
+              <span id="span2"></span>
+            </button>
+          </div>
+
+          <ul class="todos__container" id="todo__container"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
